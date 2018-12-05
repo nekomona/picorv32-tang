@@ -1,0 +1,23 @@
+	##CLK
+set_pin_assignment {extclk} { LOCATION = K14; IOSTANDARD = LVCMOS33;  } #24MHZ, K14
+  ## Dedicated QSPI interface 
+set_pin_assignment {flash_csb} { LOCATION = D3; IOSTANDARD = LVCMOS33;  } ##NAND_CS, D3
+set_pin_assignment {flash_clk} { LOCATION = H4; IOSTANDARD = LVCMOS33;  } ##NAND_CLK, H4
+set_pin_assignment {flash_io0} { LOCATION = B3; IOSTANDARD = LVCMOS33;  } ##NAND_IO0, B3
+set_pin_assignment {flash_io1} { LOCATION = F4; IOSTANDARD = LVCMOS33;  } ##NAND_IO1, F4
+set_pin_assignment {flash_io2} { LOCATION = F5; IOSTANDARD = LVCMOS33;  } ##NAND_IO2, F5
+set_pin_assignment {flash_io3} { LOCATION = B1; IOSTANDARD = LVCMOS33;  } ##NAND_IO3, B1
+  ## RGB LEDs, 3 pins
+set_pin_assignment {leds[0]} { LOCATION = R3; IOSTANDARD = LVCMOS33;  } ##LED_R, R3
+set_pin_assignment {leds[1]} { LOCATION = J14; IOSTANDARD = LVCMOS33;  } ##LED_G, J14
+set_pin_assignment {leds[2]} { LOCATION = P13; IOSTANDARD = LVCMOS33;  } ##LED_B, P13
+  ## UART, 2 pins
+set_pin_assignment {ser_tx} { LOCATION = A4; IOSTANDARD = LVCMOS33;  } ##TDO, B24_N, A4
+set_pin_assignment {ser_rx} { LOCATION = B6; IOSTANDARD = LVCMOS33;  } ##TDI, B21_N, B6
+set_pin_assignment {rst_n} { LOCATION = K16; IOSTANDARD = LVCMOS33;  } ##user_key
+set_pin_assignment {debug_flash_clk} { LOCATION = F16; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {debug_flash_csb} { LOCATION = E16; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {debug_flash_io0} { LOCATION = C15; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {debug_flash_io1} { LOCATION = C16; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {debug_flash_io2} { LOCATION = B16; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {debug_flash_io3} { LOCATION = B15; IOSTANDARD = LVCMOS33;  }
